@@ -1,0 +1,106 @@
+{
+    "data":[
+        {
+               "name":"Angita,Patel",
+                "size":"200mb",
+                "type":"Folder",
+                "children":[
+                    {
+                        "name":"Closed",
+                       
+                        "children":[
+                            {
+                                "name":"Cancellation Request",
+                                "size":"25mb",
+                                "type":"Folder"
+                            },
+                            {
+                                "name":"Transaction to be coded",
+                                "size":"25mb",
+                                "type":"Folder"
+                            }
+                        ]
+                        
+                    },
+                    {
+                        "name":"OPened",
+                        "size":"25mb",
+                        "type":"Folder",
+                        "children":[
+                            {
+                                "name":"Opened Request",
+                                "size":"25mb",
+                                "type":"Folder"
+                            },
+                            {
+                                "name":"Opened Transaction to be coded",
+                                "size":"25mb",
+                                "type":"Folder"
+                            }
+                        ]
+                        
+                    }
+                ]
+        },
+        {
+            "name":"Arora,Abhishek",
+             "size":"200mb",
+             "type":"Folder",
+             "children":[
+                 {
+                     "name":"Closed",
+                    
+                     "children":[
+                         {
+                             "name":"Arora Cancellation Request",
+                             "size":"25mb",
+                             "type":"Folder"
+                         },
+                         {
+                             "name":" AroraTransaction to be coded",
+                             "size":"25mb",
+                             "type":"Folder"
+                         }
+                     ]
+                     
+                 },
+                 {
+                     "name":"OPened",
+                     "size":"25mb",
+                     "type":"Folder",
+                     "children":[
+                         {
+                             "name":"Arora Opened Request",
+                             "size":"25mb",
+                             "type":"Folder"
+                         },
+                         {
+                             "name":"Arora Opened Transaction to be coded",
+                             "size":"25mb",
+                             "type":"Folder"
+                         }
+                     ]
+                     
+                 }
+             ]
+        },
+        {
+               "name":"Applications2",
+                "size":"200mb",
+                "type":"Folder",
+                "children":[
+                    {
+                        "name":"php",
+                        "size":"25mb",
+                        "type":"Folder"
+                    },
+                    {
+                        "name":"dot Net",
+                        "size":"25mb",
+                        "type":"Folder2"
+                    }
+                ]
+
+        }
+    ]
+}

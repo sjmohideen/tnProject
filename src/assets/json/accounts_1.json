@@ -1,0 +1,669 @@
+{
+    "data":[
+        {
+               "problemCode":"Giri,Patel",
+                "children":[
+                    {
+                        "problemCode":"Closed",
+                       
+                        "children":[
+                            {
+                                "problemCode":"Cancellation Request",
+                                "producerNo":"60132826AB",
+                                "location":"Ontario Atlantic",
+                                "policyNo":"CPO0658545",
+                                "billType":"Agency Bill",
+                                "insuredName":"Eastern Meat Solution Inc",
+                                "effectiveDate":"06/07/2019",
+                                "entryDate":"06/08/2019",
+                                "completionDate":"10/07/2019",
+                                "delayEscaltion":"Test"
+                            },
+                            {
+                                "problemCode":"Transaction to be Coded",
+                                "producerNo":"80132826DB",
+                                "location":"Ontario Atlantic",
+                                "policyNo":"DPO0658545",
+                                "billType":"Agency Bill",
+                                "insuredName":"Eastern Meat Solution Inc",
+                                "effectiveDate":"08/07/2019",
+                                "entryDate":"10/07/2019",
+                                "completionDate":"12/07/2019",
+                                "delayEscaltion":"Test"
+                            }
+                        ]
+                        
+                    },
+                    {
+                        "problemCode":"OPened",
+                        "children":[
+                            {
+                                "problemCode":"Open Request",
+                                "producerNo":"90132826ZB",
+                                "location":"Ontario Atlantic",
+                                "policyNo":"OPPO0658545",
+                                "billType":"Computer Bill",
+                                "insuredName":"Eastern Meat Solution Inc",
+                                "effectiveDate":"06/07/2019",
+                                "entryDate":"06/08/2019",
+                                "completionDate":"10/07/2019",
+                                "delayEscaltion":"Test"
+                            },
+                            {
+                                "problemCode":"Open Transaction to be Coded",
+                                "producerNo":"780132826DB",
+                                "location":"Ontario Atlantic",
+                                "policyNo":"ZPO0658545",
+                                "billType":"Agency Bill",
+                                "insuredName":"Eastern Meat Solution Inc",
+                                "effectiveDate":"08/07/2019",
+                                "entryDate":"10/07/2019",
+                                "completionDate":"12/07/2019",
+                                "delayEscaltion":"Test"
+                            }
+                        ]
+                        
+                    }
+                ]
+        },
+        {
+            "problemCode":"Shashank,Sj",
+             "children":[
+                 {
+                     "problemCode":"Closed",
+                    
+                     "children":[
+                         {
+                             "problemCode":"Cancellation Request",
+                             "producerNo":"80132826AB",
+                             "location":"India Bangalore",
+                             "policyNo":"UBO0658545",
+                             "billType":"Agency Bill",
+                             "insuredName":"Eastern Meat Solution Inc",
+                             "effectiveDate":"06/07/2019",
+                             "entryDate":"06/08/2019",
+                             "completionDate":"10/07/2019",
+                             "delayEscaltion":"Test"
+                         },
+                         {
+                             "problemCode":"Transaction to be Coded",
+                             "producerNo":"78784454545",
+                             "location":"Asia Atlantic",
+                             "policyNo":"DPO0658545",
+                             "billType":"Agency Bill",
+                             "insuredName":"Eastern Meat Solution Inc",
+                             "effectiveDate":"08/07/2019",
+                             "entryDate":"10/07/2019",
+                             "completionDate":"12/07/2019",
+                             "delayEscaltion":"Test"
+                         },
+                         {
+                            "problemCode":"Test to be Coded",
+                            "producerNo":"788784517",
+                            "location":"Asia Atlantic",
+                            "policyNo":"JUB3454556",
+                            "billType":"Test Bill",
+                            "insuredName":"Eastern Meat Solution Inc",
+                            "effectiveDate":"08/07/2019",
+                            "entryDate":"10/07/2019",
+                            "completionDate":"12/07/2019",
+                            "delayEscaltion":"Test"
+                        }
+                     ]
+                     
+                 },
+                 {
+                     "problemCode":"OPened",
+                     "children":[
+                         {
+                             "problemCode":"Sj Open Request",
+                             "producerNo":"90132826ZB",
+                             "location":"Ontario Atlantic",
+                             "policyNo":"OPPO0658545",
+                             "billType":"Computer Bill",
+                             "insuredName":"Eastern Meat Solution Inc",
+                             "effectiveDate":"06/07/2019",
+                             "entryDate":"06/08/2019",
+                             "completionDate":"10/07/2019",
+                             "delayEscaltion":"Test"
+                         }
+                     ]
+                     
+                 }
+             ]
+     },
+     {
+        "problemCode":"Manju,Sj",
+         "children":[
+             {
+                 "problemCode":"Closed",
+                
+                 "children":[
+                     {
+                         "problemCode":"Cancellation Request",
+                         "producerNo":"80132826AB",
+                         "location":"India Bangalore",
+                         "policyNo":"UBO0658545",
+                         "billType":"Agency Bill",
+                         "insuredName":"Eastern Meat Solution Inc",
+                         "effectiveDate":"06/07/2019",
+                         "entryDate":"06/08/2019",
+                         "completionDate":"10/07/2019",
+                         "delayEscaltion":"Test"
+                     },
+                     {
+                         "problemCode":"Transaction to be Coded",
+                         "producerNo":"78784454545",
+                         "location":"Asia Atlantic",
+                         "policyNo":"DPO0658545",
+                         "billType":"Agency Bill",
+                         "insuredName":"Eastern Meat Solution Inc",
+                         "effectiveDate":"08/07/2019",
+                         "entryDate":"10/07/2019",
+                         "completionDate":"12/07/2019",
+                         "delayEscaltion":"Test"
+                     },
+                     {
+                        "problemCode":"Test to be Coded",
+                        "producerNo":"788784517",
+                        "location":"Asia Atlantic",
+                        "policyNo":"JUB3454556",
+                        "billType":"Test Bill",
+                        "insuredName":"Eastern Meat Solution Inc",
+                        "effectiveDate":"08/07/2019",
+                        "entryDate":"10/07/2019",
+                        "completionDate":"12/07/2019",
+                        "delayEscaltion":"Test"
+                    }
+                 ]
+                 
+             },
+             {
+                 "problemCode":"OPened",
+                 "children":[
+                     {
+                         "problemCode":"Sj Open Request",
+                         "producerNo":"90132826ZB",
+                         "location":"Ontario Atlantic",
+                         "policyNo":"OPPO0658545",
+                         "billType":"Computer Bill",
+                         "insuredName":"Eastern Meat Solution Inc",
+                         "effectiveDate":"06/07/2019",
+                         "entryDate":"06/08/2019",
+                         "completionDate":"10/07/2019",
+                         "delayEscaltion":"Test"
+                     }
+                 ]
+                 
+             }
+         ]
+ },
+ {
+    "problemCode":"Gaur,Lokesh",
+     "children":[
+         {
+             "problemCode":"Closed",
+            
+             "children":[
+                 {
+                     "problemCode":"Cancellation Request",
+                     "producerNo":"80132826AB",
+                     "location":"India Bangalore",
+                     "policyNo":"UBO0658545",
+                     "billType":"Agency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                     "problemCode":"Transaction to be Coded",
+                     "producerNo":"78784454545",
+                     "location":"Asia Atlantic",
+                     "policyNo":"DPO0658545",
+                     "billType":"Agency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"08/07/2019",
+                     "entryDate":"10/07/2019",
+                     "completionDate":"12/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                    "problemCode":"Test to be Coded",
+                    "producerNo":"788784517",
+                    "location":"Asia Atlantic",
+                    "policyNo":"JUB3454556",
+                    "billType":"Test Bill",
+                    "insuredName":"Eastern Meat Solution Inc",
+                    "effectiveDate":"08/07/2019",
+                    "entryDate":"10/07/2019",
+                    "completionDate":"12/07/2019",
+                    "delayEscaltion":"Test"
+                }
+             ]
+             
+         },
+         {
+             "problemCode":"OPened",
+             "children":[
+                 {
+                     "problemCode":"Sj Open Request",
+                     "producerNo":"90132826ZB",
+                     "location":"Ontario Atlantic",
+                     "policyNo":"OPPO0658545",
+                     "billType":"Computer Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 }
+             ]
+             
+         }
+     ]
+},
+{
+    "problemCode":"Krishna,Das",
+     "children":[
+         {
+             "problemCode":"Closed",
+            
+             "children":[
+                 {
+                     "problemCode":"Cancellation Request",
+                     "producerNo":"80132826AB",
+                     "location":"India Bangalore",
+                     "policyNo":"UBO0658545",
+                     "billType":"Agency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                     "problemCode":"Transaction to be Coded",
+                     "producerNo":"78784454545",
+                     "location":"Asia Atlantic",
+                     "policyNo":"DPO0658545",
+                     "billType":"Agency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"08/07/2019",
+                     "entryDate":"10/07/2019",
+                     "completionDate":"12/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                    "problemCode":"Test to be Coded",
+                    "producerNo":"788784517",
+                    "location":"Asia Atlantic",
+                    "policyNo":"JUB3454556",
+                    "billType":"Test Bill",
+                    "insuredName":"Eastern Meat Solution Inc",
+                    "effectiveDate":"08/07/2019",
+                    "entryDate":"10/07/2019",
+                    "completionDate":"12/07/2019",
+                    "delayEscaltion":"Test"
+                }
+             ]
+             
+         },
+         {
+             "problemCode":"OPened",
+             "children":[
+                 {
+                     "problemCode":"Sj Open Request",
+                     "producerNo":"90132826ZB",
+                     "location":"Ontario Atlantic",
+                     "policyNo":"OPPO0658545",
+                     "billType":"Computer Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 }
+             ]
+             
+         }
+     ]
+},
+{
+    "problemCode":"Kumari,suruthi",
+     "children":[
+         {
+             "problemCode":"Closed",
+            
+             "children":[
+                 {
+                     "problemCode":"Cancellation Request",
+                     "producerNo":"80132826AB",
+                     "location":"India Bangalore",
+                     "policyNo":"UBO0658545",
+                     "billType":"Agency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                     "problemCode":"Transaction to be Coded",
+                     "producerNo":"78784454545",
+                     "location":"Asia Atlantic",
+                     "policyNo":"DPO0658545",
+                     "billType":"Agency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"08/07/2019",
+                     "entryDate":"10/07/2019",
+                     "completionDate":"12/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                    "problemCode":"Test to be Coded",
+                    "producerNo":"788784517",
+                    "location":"Asia Atlantic",
+                    "policyNo":"JUB3454556",
+                    "billType":"Test Bill",
+                    "insuredName":"Eastern Meat Solution Inc",
+                    "effectiveDate":"08/07/2019",
+                    "entryDate":"10/07/2019",
+                    "completionDate":"12/07/2019",
+                    "delayEscaltion":"Test"
+                }
+             ]
+             
+         },
+         {
+             "problemCode":"OPened",
+             "children":[
+                 {
+                     "problemCode":"Sj Open Request",
+                     "producerNo":"90132826ZB",
+                     "location":"Ontario Atlantic",
+                     "policyNo":"OPPO0658545",
+                     "billType":"Computer Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 }
+             ]
+             
+         }
+     ]
+},
+{
+    "problemCode":"Kumar,Adidya",
+     "children":[
+         {
+             "problemCode":"Closed",
+            
+             "children":[
+                 {
+                     "problemCode":"Cancellation Request",
+                     "producerNo":"78784454545",
+                     "location":"India Chenna",
+                     "policyNo":"UBO0658545",
+                     "billType":"Agency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"05/07/2019",
+                     "entryDate":"04/08/2019",
+                     "completionDate":"10/09/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                     "problemCode":"Transaction to be Coded",
+                     "producerNo":"78784454545",
+                     "location":"Asia Atlantic",
+                     "policyNo":"DPO0658545",
+                     "billType":"Agency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"08/07/2019",
+                     "entryDate":"10/07/2019",
+                     "completionDate":"12/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                    "problemCode":"Test to be Coded",
+                    "producerNo":"788784517",
+                    "location":"Asia Atlantic",
+                    "policyNo":"JUB3454556",
+                    "billType":"Test Bill",
+                    "insuredName":"Eastern Meat Solution Inc",
+                    "effectiveDate":"08/07/2019",
+                    "entryDate":"10/07/2019",
+                    "completionDate":"12/07/2019",
+                    "delayEscaltion":"Test"
+                }
+             ]
+             
+         },
+         {
+             "problemCode":"OPened",
+             "children":[
+                 {
+                     "problemCode":"Sj Open Request",
+                     "producerNo":"90132826ZB",
+                     "location":"Ontario Atlantic",
+                     "policyNo":"OPPO0658545",
+                     "billType":"Computer Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 }
+             ]
+             
+         }
+     ]
+},
+{
+    "problemCode":"Sathis,Kumar",
+     "children":[
+         {
+             "problemCode":"Closed",
+            
+             "children":[
+                 {
+                     "problemCode":"Cancellation Request",
+                     "producerNo":"80132826AB",
+                     "location":"India Bangalore",
+                     "policyNo":"XB08989898",
+                     "billType":"Currency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                     "problemCode":"Transaction to be Coded",
+                     "producerNo":"78784454545",
+                     "location":"Asia Atlantic",
+                     "policyNo":"DPO0658545",
+                     "billType":"Agency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"08/07/2019",
+                     "entryDate":"10/07/2019",
+                     "completionDate":"12/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                    "problemCode":"Test to be Coded",
+                    "producerNo":"788784517",
+                    "location":"Asia Atlantic",
+                    "policyNo":"JUB3454556",
+                    "billType":"Test Bill",
+                    "insuredName":"Eastern Meat Solution Inc",
+                    "effectiveDate":"08/07/2019",
+                    "entryDate":"10/07/2019",
+                    "completionDate":"12/07/2019",
+                    "delayEscaltion":"Test"
+                }
+             ]
+             
+         },
+         {
+             "problemCode":"OPened",
+             "children":[
+                 {
+                     "problemCode":"Sj Open Request",
+                     "producerNo":"90132826ZB",
+                     "location":"Ontario Atlantic",
+                     "policyNo":"OPPO0658545",
+                     "billType":"Computer Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 }
+             ]
+             
+         }
+     ]
+},
+{
+    
+    "problemCode":"Guptha,Manoj",
+     "children":[
+         {
+             "problemCode":"Pending",
+            
+             "children":[
+                 {
+                     "problemCode":"Cancellation Request",
+                     "producerNo":"80132826AB",
+                     "location":"India Bangalore",
+                     "policyNo":"XB08989898",
+                     "billType":"Currency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                     "problemCode":"Transaction to be Coded",
+                     "producerNo":"78784454545",
+                     "location":"Asia Atlantic",
+                     "policyNo":"DPO0658545",
+                     "billType":"Agency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"08/07/2019",
+                     "entryDate":"10/07/2019",
+                     "completionDate":"12/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                    "problemCode":"Test to be Coded",
+                    "producerNo":"788784517",
+                    "location":"Asia Atlantic",
+                    "policyNo":"JUB3454556",
+                    "billType":"Test Bill",
+                    "insuredName":"Eastern Meat Solution Inc",
+                    "effectiveDate":"08/07/2019",
+                    "entryDate":"10/07/2019",
+                    "completionDate":"12/07/2019",
+                    "delayEscaltion":"Test"
+                }
+             ]
+             
+         },
+         {
+             "problemCode":"OPened",
+             "children":[
+                 {
+                     "problemCode":"Sj Open Request",
+                     "producerNo":"90132826ZB",
+                     "location":"Ontario Atlantic",
+                     "policyNo":"OPPO0658545",
+                     "billType":"Computer Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 }
+             ]
+             
+         }
+     ]
+},
+{
+    
+    "problemCode":"Gohsh,Biswadeep",
+     "children":[
+         {
+             "problemCode":"Closed",
+            
+             "children":[
+                 {
+                     "problemCode":"Cancellation Request",
+                     "producerNo":"80132826AB",
+                     "location":"India Bangalore",
+                     "policyNo":"XB08989898",
+                     "billType":"Currency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                     "problemCode":"Transaction to be Coded",
+                     "producerNo":"78784454545",
+                     "location":"Asia Atlantic",
+                     "policyNo":"DPO0658545",
+                     "billType":"Agency Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"08/07/2019",
+                     "entryDate":"10/07/2019",
+                     "completionDate":"12/07/2019",
+                     "delayEscaltion":"Test"
+                 },
+                 {
+                    "problemCode":"Test to be Coded",
+                    "producerNo":"788784517",
+                    "location":"Asia Atlantic",
+                    "policyNo":"JUB3454556",
+                    "billType":"Test Bill",
+                    "insuredName":"Eastern Meat Solution Inc",
+                    "effectiveDate":"08/07/2019",
+                    "entryDate":"10/07/2019",
+                    "completionDate":"12/07/2019",
+                    "delayEscaltion":"Test"
+                }
+             ]
+             
+         },
+         {
+             "problemCode":"OPened",
+             "children":[
+                 {
+                     "problemCode":"Sj Open Request",
+                     "producerNo":"90132826ZB",
+                     "location":"Ontario Atlantic",
+                     "policyNo":"OPPO0658545",
+                     "billType":"Computer Bill",
+                     "insuredName":"Eastern Meat Solution Inc",
+                     "effectiveDate":"06/07/2019",
+                     "entryDate":"06/08/2019",
+                     "completionDate":"10/07/2019",
+                     "delayEscaltion":"Test"
+                 }
+             ]
+             
+         }
+     ]
+
+}
+        
+     
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "data":
+    [  
+        {  
+            "data":{  
+                "name":"Applications 121245"
+                
+            },
+            "children":[  
+                {
+                   "data": {  
+                      
+                        "name":"Angular",
+                        "size":"25mb",
+                        "type":"Folder"
+                    }
+                
+                },
+                {
+                    "data": {  
+                       
+                         "name":"Angular2",
+                         "size":"25mb",
+                         "type":"Folder"
+                     }
+                 
+                 },
+                 {
+                    "data": {  
+                       
+                         "name":"Angular3",
+                         "size":"25mb",
+                         "type":"Folder"
+                     }
+                 
+                 }
+            ]
+            
+        },
+        {  
+            "data":{  
+                "name":"Application 1212212",
+                "size":"200mb",
+                "type":"Folder"
+            },
+            "children":[  
+                {
+                   "data": {  
+                      
+                        "name":"Angular",
+                        "size":"25mb",
+                        "type":"Folder"
+                    }
+                
+                },
+                {
+                    "data": {  
+                       
+                         "name":"Angular2",
+                         "size":"25mb",
+                         "type":"Folder"
+                     }
+                 
+                 },
+                 {
+                    "data": {  
+                       
+                         "name":"Angular3",
+                         "size":"25mb",
+                         "type":"Folder"
+                     }
+                 
+                 }
+            ]
+            
+        }
+    ]
+}

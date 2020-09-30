@@ -1,0 +1,132 @@
+[
+    {
+        "id": "menu_1",
+        "name": "Menu 1",
+        "link": "/home/menu_1",
+        "actions": [
+            "Export",
+            "Copy Request",
+            "Import",
+            "Print"
+        ],
+        "children": [
+            {
+                "id": "menu_1_1",
+                "name": "Menu_child1",
+                "link": "/home/menu_1_1",
+                "actions": [
+                    "Export",
+                    "Copy Request",
+                    "Import",
+                    "Print"
+                ]
+            },
+            {
+                "id": "menu_1_2",
+                "name": "Menu_child2",
+                "link": "/home/menu_1_2",
+                "actions": [
+                    "Export",
+                    "Copy Request",
+                    "Import",
+                    "Print"
+                ]
+            },
+            {
+                "id": "menu_1_3",
+                "name": "Menu_child3",
+                "link": "/home/menu_1_3",
+                "actions": [
+                    "Export",
+                    "Copy Request",
+                    "Import",
+                    "Print"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "menu_2",
+        "name": "Menu 2",
+        "link": "/home/menu_2",
+        "actions": [
+            "Export",
+            "Copy Request",
+            "Import"
+        ]
+    },
+    {
+        "id": "menu_3",
+        "name": "Menu 3",
+        "link": "/home/menu_3",
+        "actions": [
+            "Export",
+            "Copy Request"
+        ]
+    },
+    {
+        "id": "menu_4",
+        "name": "Menu 4",
+        "link": "/home/menu_4",
+        "actions": [
+            "Export"
+        ]
+    },
+    {
+        "id": "menu_5",
+        "name": "Dashboard",
+        "link": "/dashboard",
+        "actions": [
+            "Export"
+        ]
+    },
+    {
+        "id": "menu_6",
+        "name": "create form",
+        "link": "/create-form",
+        "actions": [
+            "Export"
+        ]
+    },
+    {
+        "id": "menu_7",
+        "name": "Error messages",
+        "link": "/error-messages",
+        "actions": [
+            "Export"
+        ]
+    },
+    {
+        "id": "menu_8",
+        "name": "Model",
+        "link": "/model",
+        "actions": [
+            "Export"
+        ]
+    },
+    {
+        "id": "menu_9",
+        "name": "Default-JSON-Model",
+        "link": "/model-with-defulat-JSON-value",
+        "actions": [
+            "Export"
+        ]
+    },
+    {
+        "id": "menu_10",
+        "name": "Dynamic Form5",
+        "link": "/dynamic-component",
+        "actions": [
+            "Export"
+        ]
+    },
+    {
+        "id": "menu_11",
+        "name": "Logo Master",
+        "link": "logo-master",
+        "actions": [
+            "Export"
+        ]
+    }
+    
+]

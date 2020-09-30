@@ -1,0 +1,17 @@
+
+{
+    "data": [
+        {"name": "News","categoryName":"Local Event","categoryNeeded": "No", "id":1,"imagePath":"assets/img/no_preview.png"},
+        {"name":"Local Event","categoryName": "Party Halls", "posting": "No", "id":2,"imagePath":"https://s3.ap-south-1.amazonaws.com/onclickfiles/category_master/5bdad1e61a9e1partyhall.jpg"},
+        {"name":"Events","categoryName": "Event Organizer ", "posting": "Yes", "id":3,"imagePath":"https://s3.ap-south-1.amazonaws.com/onclickfiles/category_master/5bdad1f34ba2edj.jpg"},
+        {"name":"Events","categoryName": "Events Supplies", "posting": "No", "id":4,"imagePath":"assets/img/no_preview.png"},
+        {"name":"Events","categoryName": "Residential Service", "posting": "No", "id":5,"imagePath":"https://s3.ap-south-1.amazonaws.com/onclickfiles/module_master/5af04f5f472e1Jobs.jpg"},
+        {"name":"Classifieds","categoryName": "Professional Service", "posting": "No", "id":6,"imagePath":"assets/img/no_preview.png"}, 
+        {"name":"Classifieds","categoryName": "Business Category", "posting": "Yes", "id":7,"imagePath":"assets/img/no_preview.png"},
+        {"name":"Classifieds","categoryName": "Sell/Rent", "posting": "No", "id":8,"imagePath":"assets/img/no_preview.png"},
+        {"name":"Real Estate","categoryName": "Realtors/Builders ", "posting": "No", "id":9,"imagePath":"assets/img/no_preview.png"},
+        {"name":"Real Estate","categoryName": "Materials supplys", "posting": "No", "id":10,"imagePath":"assets/img/no_preview.png"},
+        {"name":"Real Estate","categoryName": "Engineers/Workers", "posting": "No", "id":11,"imagePath":"assets/img/no_preview.png"},
+        {"name":"Real Estate","categoryName": "Interior/Exterior", "posting": "No", "id":12,"imagePath":"assets/img/no_preview.png"}             
+    ]
+}
