@@ -7,7 +7,7 @@ export const sideNavSections: SideNavSection[] = [
     },
     {
         text: 'INTERFACE',
-        items: ['masters', 'pages'],
+        items: ['masters','location', 'pages'],
     },
     {
         text: 'ADDONS',
@@ -40,6 +40,28 @@ export const sideNavItems: SideNavItems = {
             {
                 text: 'Light Sidenav',
                 link: '/dashboard/light',
+            },
+        ],
+    },
+    location: {
+        icon: 'map',
+        text: 'Location',
+        submenu: [
+            {
+                text: 'Country',
+                link: '/admin/country',
+            },
+            {
+                text: 'State',
+                link: '/admin/state',
+            },
+            {
+                text: 'City',
+                link: '/admin/city',
+            },
+            {
+                text: 'Locality',
+                link: '/admin/locality',
             },
         ],
     },

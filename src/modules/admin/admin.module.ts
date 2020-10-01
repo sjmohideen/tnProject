@@ -9,11 +9,15 @@ import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { ModuleComponent } from './component/master/module/module.component';
 import { MasterService } from './service/master.service';
 import { CategoryComponent } from './component/master/category/category.component';
+import { CountryComponent } from './component/location/country/country.component';
+import { StateComponent } from './component/location/state/state.component';
+import { CityComponent } from './component/location/city/city.component';
+import { LocalityComponent } from './component/location/locality/locality.component';
 
 
 
 @NgModule({
-  declarations: [LogoMasterComponent, ModuleComponent, CategoryComponent],
+  declarations: [LogoMasterComponent, ModuleComponent, CategoryComponent, CountryComponent, StateComponent, CityComponent, LocalityComponent],
   imports: [
     CommonModule,
     NavigationModule,

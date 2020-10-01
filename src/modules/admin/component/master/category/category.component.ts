@@ -27,6 +27,12 @@ export class CategoryComponent implements OnInit {
     imageUrl: any = '/assets/img/no_preview.png';
     editFile: any = true;
     removeUpload: boolean = false;
+    moduleList = [ {id:1,"name":"Events"},
+                  {id:2,"name":"News"},
+                  {id:3,"name":"Real Estate"},
+                  {id:4,"name":"Classifieds"},
+                  {id:5,"name":"Auto Mobiles"}
+                ];
   constructor(private masterService: MasterService,private formBuilder: FormBuilder,private ref: ChangeDetectorRef,private messageService: MessageService) { }
 
   ngOnInit(): void {
@@ -35,12 +41,14 @@ export class CategoryComponent implements OnInit {
       { field: 'categoryName', header: 'Category Name' },
       {field: 'posting', header: 'categoryName ' },
 
+
   ];
     this.loadAPI(0);
     this.formFields = this.formBuilder.group({
         name: ['', Validators.required],
         postingStatus: ["Yes", Validators.required],
-        imageLogo: ['', Validators.required]
+        imageLogo: ['', Validators.required],
+        moduleId: ['', Validators.required]
     });
  
   }
@@ -75,7 +83,7 @@ export class CategoryComponent implements OnInit {
 onSubmit() {
 
   this.submitted = true;
-
+  console.log("freq:",this.formFields.value.moduleId)
   // stop here if form is invalid
   if (this.formFields.invalid) {
       return;
@@ -96,6 +104,7 @@ edit(rowData:any){
    this.formFields.patchValue({
     //imageLogo: reader.result
     name:rowData.name,
+    moduleId:rowData.name,
     postingStatus:rowData.posting,
     imageLogo :'test'
   });

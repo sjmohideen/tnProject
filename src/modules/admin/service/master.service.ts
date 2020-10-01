@@ -40,5 +40,13 @@ export class MasterService {
       .then(data => { return data; });
     }
     
+    getCountry(pageNo =0 ,start=0,end=0){
+      let fileName  = 'assets/json/country_'+pageNo+".json";
+      console.log("fileName:",fileName)
+      return this.http.get<any>(fileName)
+      .toPromise()
+      .then(res =>res.data)
+      .then(data => { return data; });
+    }
      
 }
