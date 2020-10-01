@@ -1,0 +1,8 @@
+
+{
+    "data": [
+        {"id":"1","stateCode":"TN","name":"Chennai","lattitude":"13.90","longitude":"23.45","cityImage":"testImage","weatherApiId":"2345"}
+        
+        
+    ]
+}

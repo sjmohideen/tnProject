@@ -1,0 +1,10 @@
+
+{
+    "data": [
+        {"id":"1","name":"Chennai","stateCode":"TN"},
+        {"id":"2","name":"Madurai","stateCode":"TN"},
+        {"id":"3","name":"Coimbatore","stateCode":"TN"},
+        {"id":"1","name":"Tiruchirapalli","stateCode":"TN"}
+        
+    ]
+}
