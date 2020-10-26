@@ -141,5 +141,28 @@ edit(rowData:any){
   toggle(){
     this.showForm = !this.showForm;
   }
-
+  //this.messageService.add({severity:'success', summary:'Add/Edit State', detail:'Data has been saved successfully.'});
+  // display form values on success
+ // alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.formFields.value, null, 4));
 }
+
+// ngAfterViewInit() {
+//   this.ref.detectChanges();
+// }
+
+// /* This is function is called when edit Row*/ 
+// edit(rowData:any){
+//   console.log("EditRow:",rowData)
+//   this.showForm = true;
+//    this.formFields.patchValue({
+//     //imageLogo: reader.result
+//     name:rowData.name,
+//     stateCode:rowData.stateCode
+//   });
+ 
+// }
+// onReset(){
+  
+// }
+
+//}

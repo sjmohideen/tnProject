@@ -48,7 +48,6 @@ export class MasterService {
       .then(res =>res.data)
       .then(data => { return data; });
     }
-
     getState(pageNo =0 ,start=0,end=0){
       let fileName  = 'assets/json/state_'+pageNo+".json";
       console.log("fileName:",fileName)
@@ -65,5 +64,4 @@ export class MasterService {
       .then(res =>res.data)
       .then(data => { return data; });
     }
-     
 }
