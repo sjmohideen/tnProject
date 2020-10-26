@@ -2,8 +2,8 @@
 <sb-layout-dashboard>
     <p-toast position="top-right"></p-toast>
     <div class="mt-3"></div>
-    <p-accordion [multiple]="true" >
-     <p-accordionTab header="Add/Edit Module" [selected]="showForm"  >
+    <p-accordion  [multiple]="true" >
+     <p-accordionTab header="Add/Edit Module" [selected]="showForm"   >
             <form [formGroup]="formFields" (ngSubmit)="onSubmit()">   
                 <div class="form-row">
                 
@@ -26,15 +26,15 @@
                                 <div >Upload Only Jpg,png File</div>
                             </div> 
                             
-                            <div class="avatar-upload">
-                                <div class="avatar-edit">
-                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput (change)="uploadFile($event)" />
+                                <div class="avatar-upload">
+                                    <div class="avatar-edit">
+                                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput (change)="uploadFile($event)" />
+                                </div>
+                                <div class="avatar-preview">
+                                <div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'">
+                                </div>
+                                </div>
                             </div>
-                            <div class="avatar-preview">
-                            <div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'">
-                            </div>
-                            </div>
-                        </div>
                         </div>
                         
                     </div>
@@ -66,13 +66,13 @@
      </p-accordionTab>
    </p-accordion>
    <div class="mt-3"></div>
-    <p-table [columns]="cols" [value]="data" [paginator]="true" [rows]="pagination.perPage" [showCurrentPageReport]="true" 
+    <p-table #dt [columns]="cols" [value]="data" [paginator]="true" [rows]="pagination.perPage" [showCurrentPageReport]="true" 
     currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" 
-    [totalRecords]="pagination.totalRecords" [loading]="loading"     >
+    [totalRecords]="pagination.totalRecords" [loading]="loading"    (input)="dt.filterGlobal($event.target.value, 'contains')"  >
     <ng-template pTemplate="caption">
         <div class="table-header">
             List of Module
-            <span class="p-input-icon-left">
+            <span class="p-input-icon-left search-holder">
                 <i class="pi pi-search"></i>
                 <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Global Search" />
             </span>

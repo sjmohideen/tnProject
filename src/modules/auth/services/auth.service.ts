@@ -25,4 +25,7 @@ export class AuthService {
     getUserInfo(){
         return localStorage.getItem("userInfo");
     }
+    logout(){
+        localStorage.clear();
+    }
 }

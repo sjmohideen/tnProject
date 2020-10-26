@@ -48,5 +48,22 @@ export class MasterService {
       .then(res =>res.data)
       .then(data => { return data; });
     }
+
+    getState(pageNo =0 ,start=0,end=0){
+      let fileName  = 'assets/json/state_'+pageNo+".json";
+      console.log("fileName:",fileName)
+      return this.http.get<any>(fileName)
+      .toPromise()
+      .then(res =>res.data)
+      .then(data => { return data; });
+    }
+    getCity(pageNo =0 ,start=0,end=0){
+      let fileName  = 'assets/json/city_'+pageNo+".json";
+      console.log("fileName:",fileName)
+      return this.http.get<any>(fileName)
+      .toPromise()
+      .then(res =>res.data)
+      .then(data => { return data; });
+    }
      
 }

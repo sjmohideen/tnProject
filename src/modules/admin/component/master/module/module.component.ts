@@ -9,6 +9,7 @@ import {MessageService} from 'primeng/api';
   styleUrls: ['./module.component.scss']
 })
 export class ModuleComponent implements OnInit {
+  @ViewChild('dt') dt: any;
   cols:any= [];
   data:any = [];
   showForm:any = false;
@@ -31,7 +32,9 @@ export class ModuleComponent implements OnInit {
   ngOnInit(): void {
     this.cols = [
       { field: 'name', header: 'Module Name' },
-      {field: 'posting', header: 'posting ' },
+      {field: 'posting', header: 'User Posting ' },
+      {field: 'status', header: 'Status' },
+
 
   ];
     this.loadAPI(0);
@@ -127,6 +130,14 @@ edit(rowData:any){
       // ChangeDetectorRef since file is loading outside the zone
       //this.ref.markForCheck();        
     }
+  }
+
+  toggle(){
+    this.showForm = !this.showForm;
+  }
+  public doGlobalFilter(text: string) {
+    console.log("global search text: ", text);
+    this.dt.filterGlobal(text, 'contains');
   }
 
 }

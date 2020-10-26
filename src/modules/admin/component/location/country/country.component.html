@@ -8,7 +8,7 @@
             <form [formGroup]="formFields" (ngSubmit)="onSubmit()"> 
                 <div class="form-row">
                    
-                    <div class="form-group col-5">
+                    <div class="form-group col-3">
                         <label>Country Name</label>
                         <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
                         <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
@@ -16,14 +16,84 @@
                         </div>
                     </div>
 
-                    <div class="form-group col-5">
+                    <div class="form-group col-3">
                         <label>Country Code</label>
                         <input type="text" formControlName="countryCode" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.countryCode.errors }" />
                         <div *ngIf="submitted && f.countryCode.errors" class="invalid-feedback">
                             <div *ngIf="f.countryCode.errors.required"> Country Code is required</div>
                         </div>
                     </div>
+                    <div class="form-group col-3 inputIcon">
+                        <label>Calling Code</label>
+                        <i class="fa fa-plus"></i>
+                        <input type="text" formControlName="callingCode" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.callingCode.errors }" maxlength="3" />
+                        <div *ngIf="submitted && f.callingCode.errors" class="invalid-feedback">
+                            <div *ngIf="f.callingCode.errors.required"> Calling Code is required</div>
+                        </div>
+
+                      
+                    </div>
+                    <div  class="form-group col-3 inputIcon currency-field" >
+                        <label>Currency</label>
+                       
+                        <input type="text" formControlName="currency" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.currency.errors }" maxlength="3" />
+                        <div *ngIf="submitted && f.currency.errors" class="invalid-feedback">
+                            <div *ngIf="f.currency.errors.required"> Currency  is required</div>
+                        </div>
+                    </div>
+                   
                     
+                </div>
+                <div class="form-row">
+                   
+                    <div class="form-group col-3">
+                        <label>Primary Language</label>
+                        <select formControlName="primaryLanguage" class="form-control" >
+                            <option [ngValue]="null" > --Select --</option>
+                            <option *ngFor="let prf of languageList" [ngValue]="prf.id">
+                             {{ prf.name }}
+                            </option>
+                          </select>
+                          <div *ngIf="submitted && f.primaryLanguage.errors" class="invalid-feedback">
+                            <div *ngIf="f.moduleId.errors.required"> Primary Language  is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group col-4">
+                        <label>Secondary Language</label>
+                        <select formControlName="secondaryLanguage" class="form-control" >
+                            <option [ngValue]="null" > --Select --</option>
+                            <option *ngFor="let prf of languageList" [ngValue]="prf.id">
+                             {{ prf.name }}
+                            </option>
+                          </select>
+                          <div *ngIf="submitted && f.secondaryLanguage.errors" class="invalid-feedback">
+                            <div *ngIf="f.secondaryLanguage.errors.required"> Secondary Language  is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group col-4">
+                    
+                        <div class="group-gap">
+                            <button type="button" class="btn btn-primary btn-sm btn-block choose-file" (click)="fileInput.click($event)">Choose a file</button>
+                            <!-- Upload image -->
+                            <div *ngIf="submitted && f.imageLogo.errors" class="invalid-feedback">
+                                <div *ngIf="f.imageLogo.errors.required">Image is required</div>
+                            </div> 
+                            <div *ngIf="showErrorFile" class="invalid-feedback">
+                                <div >Upload Only Jpg,png File</div>
+                            </div> 
+                            
+                                <div class="avatar-upload">
+                                    <div class="avatar-edit">
+                                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput (change)="uploadFile($event)" />
+                                </div>
+                                <div class="avatar-preview">
+                                <div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
                     
                 
@@ -41,9 +111,9 @@
      </p-accordionTab>
    </p-accordion>
    <div class="mt-3"></div>
-    <p-table [columns]="cols" [value]="data" [paginator]="true" [rows]="pagination.perPage" [showCurrentPageReport]="true" 
+    <p-table #dt [columns]="cols" [value]="data" [paginator]="true" [rows]="pagination.perPage" [showCurrentPageReport]="true" 
     currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" 
-    [totalRecords]="pagination.totalRecords" [loading]="loading"     >
+    [totalRecords]="pagination.totalRecords" [loading]="loading"    (input)="dt.filterGlobal($event.target.value, 'contains')"   >
     <ng-template pTemplate="caption">
         <div class="table-header">
             Country(s) List:

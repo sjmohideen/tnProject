@@ -1,14 +1,58 @@
 <div class="row">
+   
     <div class="col-xl-6">
         <sb-card
-            ><div class="card-header"><fa-icon class="mr-1" [icon]='["fas", "chart-area"]'></fa-icon>Area Chart Example</div>
-            <div class="card-body"><sb-charts-area></sb-charts-area></div
+            ><div class="card-header"><fa-icon class="mr-1" [icon]='["fas", "chart-bar"]'></fa-icon>Posting count by City/Zone</div>
+            <div class="card-body"><sb-charts-bar [data]="dataForPosting"></sb-charts-bar></div
         ></sb-card>
     </div>
+
     <div class="col-xl-6">
         <sb-card
-            ><div class="card-header"><fa-icon class="mr-1" [icon]='["fas", "chart-bar"]'></fa-icon>Bar Chart Example</div>
-            <div class="card-body"><sb-charts-bar></sb-charts-bar></div
+            ><div class="card-header"><fa-icon class="mr-1" [icon]='["fas", "chart-bar"]'></fa-icon>Events</div>
+            <div class="card-body"><sb-charts-bar [data]="eventsData" ></sb-charts-bar></div
         ></sb-card>
     </div>
+    
+</div>
+
+<div class="row">
+   
+    <div class="col-xl-6">
+        <sb-card
+            ><div class="card-header"><fa-icon class="mr-1" [icon]='["fas", "chart-bar"]'></fa-icon>Restaurants</div>
+            <div class="card-body"><sb-charts-bar [data]="restaurantsData"></sb-charts-bar></div
+        ></sb-card>
+    </div>
+
+    <div class="col-xl-6">
+        <sb-card
+            ><div class="card-header"><fa-icon class="mr-1" [icon]='["fas", "chart-bar"]'></fa-icon>Classifieds</div>
+            <div class="card-body">
+                <sb-charts-bar [data]="classfiedsData"></sb-charts-bar></div
+        ></sb-card>
+    </div>
+
+  
+    
+</div>
+
+<div class="row">
+   
+    <div class="col-xl-6">
+        <sb-card
+            ><div class="card-header"><fa-icon class="mr-1" [icon]='["fas", "chart-bar"]'></fa-icon>Real Estates</div>
+            <div class="card-body"><sb-charts-bar [data]="realEstatesData"></sb-charts-bar></div
+        ></sb-card>
+    </div>
+
+    <div class="col-xl-6">
+        <sb-card
+            ><div class="card-header"><fa-icon class="mr-1" [icon]='["fas", "chart-bar"]'></fa-icon>Jobs & Training</div>
+            <div class="card-body"><sb-charts-bar [data]="jobsData"></sb-charts-bar></div
+        ></sb-card>
+    </div>
+
+    
+    
 </div>

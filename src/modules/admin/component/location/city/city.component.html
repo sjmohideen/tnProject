@@ -1,1 +1,152 @@
-<p>city works!</p>
+
+<sb-layout-dashboard>
+    <p-toast position="top-right"></p-toast>
+    <div class="mt-3"></div>
+   
+    <p-accordion [multiple]="true" >
+     <p-accordionTab header="Add/Edit City" [selected]="showForm"  >
+            <form [formGroup]="formFields" (ngSubmit)="onSubmit()"> 
+                <div class="form-row">
+                   
+                    <div class="form-group col-lg-3 col-sm-12 col-md-2">
+                        <label>Country Name</label>
+                        <select formControlName="countryId" class="form-control" >
+                            <option [ngValue]="null" > --Select --</option>
+                            <option *ngFor="let prf of countryList" [ngValue]="prf.id">
+                             {{ prf.name }}
+                            </option>
+                          </select>
+                          <div *ngIf="submitted && f.countryId.errors" class="invalid-feedback">
+                            <div *ngIf="f.countryId.errors.required"> Country Name is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group col-3">
+                        <label>State Name</label>
+                        <select formControlName="stateId" class="form-control" >
+                            <option [ngValue]="null" > --Select --</option>
+                            <option *ngFor="let prf of stateList" [ngValue]="prf.id">
+                             {{ prf.name }}
+                            </option>
+                          </select>
+                          <div *ngIf="submitted && f.stateId.errors" class="invalid-feedback">
+                            <div *ngIf="f.stateId.errors.required"> State Name is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group col-3">
+                        <label>City Name</label>
+                        <input type="text" formControlName="cityName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.cityName.errors }" />
+                        <div *ngIf="submitted && f.cityName.errors" class="invalid-feedback">
+                            <div *ngIf="f.cityName.errors.required">City Name is required</div>
+                        </div>
+                    </div>
+                  
+                   
+                    
+                    
+                </div>
+                <div class="form-row">
+                   
+                    <div class="form-group col-3">
+                        <label>Latitude</label>
+                        <input type="text" formControlName="latitude" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.latitude.errors }" />
+                        <div *ngIf="submitted && f.latitude.errors" class="invalid-feedback">
+                            <div *ngIf="f.latitude.errors.required">Latitude is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group col-3">
+                        <label>Longitude</label>
+                        <input type="text" formControlName="longitude" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.longitude.errors }" />
+                        <div *ngIf="submitted && f.longitude.errors" class="invalid-feedback">
+                            <div *ngIf="f.longitude.errors.required">Longitude is required</div>
+                        </div>
+                    </div>  
+                    <div class="form-group col-3">
+                        <label>Weather API Id</label>
+                        <input type="text" formControlName="weatherApiId" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.weatherApiId.errors }" />
+                        <div *ngIf="submitted && f.weatherApiId.errors" class="invalid-feedback">
+                            <div *ngIf="f.weatherApiId.errors.required">Weather API Id is required</div>
+                        </div>
+                    </div>
+                     <div class="form-group col-3">  
+                        <div >
+                            <button type="button" class="btn btn-primary btn-sm btn-block choose-file" (click)="fileInput.click($event)">Choose a file</button>
+                            <!-- Upload image -->
+                            <div *ngIf="submitted && f.imageLogo.errors" class="invalid-feedback">
+                                <div *ngIf="f.imageLogo.errors.required">Image is required</div>
+                            </div> 
+                            <div *ngIf="showErrorFile" class="invalid-feedback">
+                                <div >Upload Only Jpg,png File</div>
+                            </div> 
+                            
+                            <div class="avatar-upload">
+                                <div class="avatar-edit">
+                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput (change)="uploadFile($event)" />
+                            </div>
+                            <div class="avatar-preview">
+                            <div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'">
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+                    
+         
+                <div class="form-row text-center ">     
+                        <div class="form-group col ">
+                            <div class="text-center ">
+                                <button class="btn btn-primary mr-1">Submit</button>
+                                <button class="btn btn-secondary" type="reset" (click)="onReset()">Cancel</button>
+                            </div>
+                        </div>
+                 </div>
+                    
+             
+            </form>
+     </p-accordionTab>
+   </p-accordion>
+   <div class="mt-3"></div>
+    <p-table  #dt [columns]="cols" [value]="data" [paginator]="true" [rows]="pagination.perPage" [showCurrentPageReport]="true" 
+    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" 
+    [totalRecords]="pagination.totalRecords" [loading]="loading"     >
+    <ng-template pTemplate="caption">
+        <div class="table-header">
+            List of City's
+            <span class="p-input-icon-left search-holder">
+                <i class="pi pi-search"></i>
+                <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Global Search" />
+            </span>
+        </div>
+        </ng-template>
+        <ng-template pTemplate="header" let-columns>
+            <tr>
+              <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+                  {{col.header}}  <p-sortIcon [field]="col.field"></p-sortIcon>
+              </th> 
+              
+              <th>Edit</th> 
+                   
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr>
+              <td *ngFor="let col of columns">
+                      {{rowData[col.field]}}
+              </td>
+              
+             
+              <td>
+                <button type="button" class="btn btn-sm btn-primary btn-edit fav-space" id="2" title="Edit details" (click)="edit(rowData)"> <i class="fa fa fa-pencil-square-o"></i> </button>
+                  &nbsp; 
+                <button type="button" class="btn btn-sm btn-warning btn-status" id="2" data-status="0" title="Active/Deactive details">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </button>
+                &nbsp; 
+                  <button type="button" disabled="" class="btn btn-sm btn-danger btn-delete" id="2" title="Delete details" data-toggle="modal" data-target="#confirmModal">
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+              </button></td>
+          </tr>
+        </ng-template>
+      </p-table>
+</sb-layout-dashboard>

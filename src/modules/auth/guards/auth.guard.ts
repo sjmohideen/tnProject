@@ -13,7 +13,7 @@ export class AuthGuard implements CanActivate {
         //return of(true);
         let loggedInFlag = this.authService.isLoggedIn();
         if(loggedInFlag == false){
-            this.rout.navigate(['/auth/login']);
+            this.rout.navigate(['admin/auth/login']);
         }
         console.log("loggedInFlag:",loggedInFlag)
         return of (loggedInFlag);

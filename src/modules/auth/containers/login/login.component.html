@@ -1,18 +1,38 @@
 <sb-layout-auth
-    ><div class="container">
+    >
+    <div class="mt-space-center"></div>
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-5">
                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Login1111</h3></div>
+                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                     <div class="card-body">
-                        <form (onsubmit)="submitForm()">
-                            <div class="form-group"><label class="small mb-1" for="inputEmailAddress">Email</label><input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="Enter email address" /></div>
-                            <div class="form-group"><label class="small mb-1" for="inputPassword">Password</label><input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" /></div>
+                        <form [formGroup]="formFields"  (onsubmit)="submitForm()" >
+                            <div class="form-group inputIcon">
+                                <label class="small mb-1" for="inputEmailAddress">Email</label>
+                                <input formControlName="emailId"  [ngClass]="{ 'is-invalid': submitted && f.emailId.errors }" class="form-control py-4 " id="inputEmailAddress" type="text" placeholder="Enter email address" />
+                                <i class="fa fa-envelope"></i>
+                               
+                                <div *ngIf="submitted && f.emailId.errors" class="invalid-feedback">
+                                    <div *ngIf="f.emailId.errors.required"> Email Id is required</div>
+                                    <div *ngIf="f.emailId.errors.email">Email must be a valid email address</div>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group inputIcon ">
+                                <label class="small mb-1" for="inputPassword">Password</label>
+                                <input formControlName="password"  [ngClass]="{ 'is-invalid': submitted && f.password.errors }" class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" maxlength="55" />
+                                <i class="fa fa-lock fa-lg"></i>
+                                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                    <div *ngIf="f.password.errors.required"> Password  is required</div>
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <div class="custom-control custom-checkbox"><input class="custom-control-input" id="rememberPasswordCheck" type="checkbox" /><label class="custom-control-label" for="rememberPasswordCheck">Remember password</label></div>
                             </div>
-                            <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0"><a class="small" routerLink="/auth/forgot-password">Forgot Password?</a>
-                                <button class="btn btn-primary" (click)="submitForm()">LogIn</button></div>
+                            <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0"><a class="small" routerLink="/admin/auth/forgot-password">Forgot Password?</a>
+                                <button class="btn btn-primary" (click)="submitForm()">
+                                    <i class="fa fa-spinner fa-spin" *ngIf="loading"></i> LogIn</button></div>
                         </form>
                     </div>
                     <!-- <div class="card-footer text-center">

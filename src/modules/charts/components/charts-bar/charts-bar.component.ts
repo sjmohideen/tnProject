@@ -3,6 +3,7 @@ import {
     ChangeDetectionStrategy,
     Component,
     ElementRef,
+    Input,
     OnInit,
     ViewChild,
 } from '@angular/core';
@@ -17,6 +18,7 @@ import { Chart } from 'chart.js';
 export class ChartsBarComponent implements OnInit, AfterViewInit {
     @ViewChild('myBarChart') myBarChart!: ElementRef<HTMLCanvasElement>;
     chart!: Chart;
+    @Input ('data') data:any;
 
     constructor() {}
     ngOnInit() {}
@@ -25,17 +27,20 @@ export class ChartsBarComponent implements OnInit, AfterViewInit {
         this.chart = new Chart(this.myBarChart.nativeElement, {
             type: 'bar',
             data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                labels: this.data.labels,
                 datasets: [
                     {
                         label: 'Revenue',
-                        backgroundColor: 'rgba(2,117,216,1)',
-                        borderColor: 'rgba(2,117,216,1)',
-                        data: [4215, 5312, 6251, 7841, 9821, 14984],
+                        backgroundColor: '#0069D9',
+                       
+                        categoryPercentage: 0.4,
+                        borderColor: '#0069D9',
+                        data: this.data.data
                     },
                 ],
             },
             options: {
+               
                 scales: {
                     xAxes: [
                         {
@@ -48,13 +53,14 @@ export class ChartsBarComponent implements OnInit, AfterViewInit {
                             ticks: {
                                 maxTicksLimit: 6,
                             },
+                            
                         },
                     ],
                     yAxes: [
                         {
                             ticks: {
                                 min: 0,
-                                max: 15000,
+                                // max: 15000,
                                 maxTicksLimit: 5,
                             },
                             gridLines: {

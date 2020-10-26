@@ -9,6 +9,7 @@ import { CountryComponent } from './component/location/country/country.component
 import { CityComponent } from './component/location/city/city.component';
 import { StateComponent } from './component/location/state/state.component';
 import { LocalityComponent } from './component/location/locality/locality.component';
+import { TestComponent } from './component/location/test/test.component';
 const routes: Routes = [
   {path:'master',component:LogoMasterComponent},
   {path:'module',component:ModuleComponent},
@@ -17,6 +18,8 @@ const routes: Routes = [
   {path:'city',component:CityComponent},
   {path:'state',component:StateComponent},
   {path:'locality',component:LocalityComponent},
+  {path:'test',component:TestComponent},
+  
   
 ];
 

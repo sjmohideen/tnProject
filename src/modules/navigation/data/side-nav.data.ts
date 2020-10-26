@@ -7,60 +7,89 @@ export const sideNavSections: SideNavSection[] = [
     },
     {
         text: 'INTERFACE',
-        items: ['masters','location', 'pages'],
+        items: ['masters', 'daily_updates'],
     },
-    {
-        text: 'ADDONS',
-        items: ['charts', 'tables'],
-    },
+    // {
+    //     text: 'ADDONS',
+    //     items: ['charts', 'tables'],
+    // },
 ];
 
 export const sideNavItems: SideNavItems = {
     dashboard: {
         icon: 'tachometer-alt',
         text: 'Dashboard',
-        link: '/dashboard',
+        link: '/admin/dashboard',
     },
     masters: {
         icon: 'columns',
         text: 'Masters',
         submenu: [
             {
-                text: 'Logo Masters',
-                link: '/admin/master',
-            },
-            {
-                text: 'Module Master',
-                link: '/admin/module',
-            },
-            {
-                text: 'Static Navigation',
-                link: '/dashboard/static',
-            },
-            {
-                text: 'Light Sidenav',
-                link: '/dashboard/light',
-            },
-        ],
+                text: 'Global',
+                submenu: [
+           
+                    {
+                        text: 'Module Master',
+                        link: '/admin/module',
+                    },
+                    {
+                        text: 'Category Master',
+                        link: '/admin/category',
+                    },
+            
+                    ],
+                },
+                {
+                text: 'Location',
+                submenu: [
+           
+                    {
+                        text: 'Country',
+                        link: '/admin/country',
+                    },
+                    {
+                        text: 'State',
+                        link: '/admin/state',
+                    },
+                    {
+                        text: 'City',
+                        link: '/admin/city',
+                    },
+                    {
+                        text: 'Locality',
+                        link: '/admin/locality',
+                    },
+            
+                    ],
+                }
+            ]
     },
     location: {
-        icon: 'map',
+        icon: 'columns',
         text: 'Location',
         submenu: [
+            
+        ],
+    },
+    daily_updates: {
+        icon: 'book-open',
+        text: 'Daily Updates',
+        submenu: [
             {
-                text: 'Country',
+                text: 'Commodity Item Prices',
                 link: '/admin/country',
             },
             {
-                text: 'State',
+                text: 'Petrol Price',
                 link: '/admin/state',
             },
             {
-                text: 'City',
+                text: 'Diesel Price',
                 link: '/admin/city',
             },
             {
-                text: 'Locality',
+                text: 'Autogas Price',
                 link: '/admin/locality',
             },
         ],

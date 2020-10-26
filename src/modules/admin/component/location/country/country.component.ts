@@ -6,10 +6,10 @@ import {MessageService} from 'primeng/api';
 @Component({
   selector: 'country',
   templateUrl: './country.component.html',
-  styleUrls: ['./country.component.scss']
+  styleUrls: ['./country.component.scss','../../master/module/module.component.scss']
 })
 export class CountryComponent implements OnInit {
-
+  @ViewChild('dt') dt: any;
   cols:any= [];
   data:any = [];
   showForm:any = false;
@@ -19,13 +19,32 @@ export class CountryComponent implements OnInit {
   submitted = false;
   formFields:FormGroup;
   header = "Add/Edit Country";
-  
+  languageList = [ {id:1,"name":"English"},
+                  {id:2,"name":"Spanish"},
+                  {id:3,"name":"Arabic"},
+                  {id:4,"name":"Urdu"},
+                  {id:5,"name":"Hindi"},
+                  {id:6,"name":"Japanish"}
+                ];
+  fileExt ='';
+  showErrorFile = false;
+  acceptFileExt =["png","jpg"];
+  /*########################## File Upload ########################*/
+  @ViewChild('fileInput') el: ElementRef;
+  //imageUrl: any = 'https://i.pinimg.com/236x/d6/27/d9/d627d9cda385317de4812a4f7bd922e9--man--iron-man.jpg';
+  imageUrl: any = '/assets/img/no_preview.png';
+  editFile: any = true;
+  removeUpload: boolean = false;
   constructor(private masterService: MasterService,private formBuilder: FormBuilder,private ref: ChangeDetectorRef,private messageService: MessageService) { }
 
   ngOnInit(): void {
     this.cols = [
       { field: 'name', header: 'Country Name' },
-      { field: 'countryCode', header: 'Country Code' }
+      { field: 'countryCode', header: 'Country Code' },
+      { field: 'callingCode', header: 'Calling Code' },
+      { field: 'primaryLanguage', header: 'Primary Language' },
+      { field: 'secondaryLanguage', header: 'Secondary Language' },
+      { field: 'status', header: 'Status' },
 
 
   ];
@@ -33,6 +52,11 @@ export class CountryComponent implements OnInit {
     this.formFields = this.formBuilder.group({
         name: ['', Validators.required],
         countryCode: ['', Validators.required],
+        callingCode: ['', Validators.required],
+        currency: ['', Validators.required],
+        primaryLanguage: ['', Validators.required],
+        secondaryLanguage: ['', Validators.required],
+        imageLogo: ['', Validators.required]
     });
  
   }
@@ -88,13 +112,57 @@ edit(rowData:any){
    this.formFields.patchValue({
     //imageLogo: reader.result
     name:rowData.name,
-    countryCode:rowData.countryCode
+    countryCode:rowData.countryCode,
+    callingCode:rowData.callingCode,
+    currency:rowData.currency,
+    primaryLanguage:rowData.primaryLanguageId,
+    secondaryLanguage:rowData.secondaryLanguageId,
+    imageLogo:rowData.imageLogo
+
+
+
+
   });
  
 }
+
 onReset(){
   
 }
 
+public doGlobalFilter(text: string) {
+  console.log("global search text: ", text);
+  this.dt.filterGlobal(text, 'contains');
+}
+
+uploadFile(event:any) {
+  let reader = new FileReader(); // HTML5 FileReader API
+  let file = event.target.files[0];
+  if (event.target.files && event.target.files[0]) {
+  let fileName = file.name;
+   console.log("F:",fileName)
+   this.fileExt = fileName.replace(/^.*\./, '').toLowerCase();
+   reader.readAsDataURL(file);
+  // When file uploads set it to file formcontrol
+    reader.onload = () => {
+           this.imageUrl = reader.result;
+          this.formFields.patchValue({
+            imageLogo: reader.result
+          });
+        this.editFile = false;
+        this.removeUpload = true;
+        this.showErrorFile = false;
+     
+      if(this.acceptFileExt.indexOf(this.fileExt) != -1 ){
+        this.showErrorFile = false;
+      }else{
+        this.showErrorFile = true;
+      }
+      console.log("forM:",this.formFields)
+    }
+    // ChangeDetectorRef since file is loading outside the zone
+    //this.ref.markForCheck();        
+  }
+}
 
 }

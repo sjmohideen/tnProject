@@ -1,0 +1,12 @@
+
+{
+    "data": [
+        {"status":"Active","countryId":1,"countryName": "India","stateId": 1,"name": "Tamil Nadu ","stateCode":"TN","categoryNeeded": "No", "id":1,"imagePath":"assets/img/no_preview.png"},
+        {"status":"Active","countryId":1,"countryName": "India","stateId": 2,"name":"Andhra Pradesh","stateCode": "AP", "posting": "No", "id":2,"imagePath":"https://s3.ap-south-1.amazonaws.com/onclickfiles/category_master/5bdad1e61a9e1partyhall.jpg"},
+        {"status":"Active","countryId":1,"countryName": "India","stateId": 3,"name":"Pondichery","stateCode": "PY", "posting": "Yes", "id":3,"imagePath":"https://s3.ap-south-1.amazonaws.com/onclickfiles/category_master/5bdad1f34ba2edj.jpg"},
+        {"status":"Active","countryId":1,"countryName": "India","stateId": 4,"name":"Kerala","stateCode": "KL", "posting": "No", "id":4,"imagePath":"assets/img/no_preview.png"},
+        {"status":"Active","countryId":1,"countryName": "India","stateId": 5,"name":"Karnataka","stateCode": "KA", "posting": "No", "id":5,"imagePath":"https://s3.ap-south-1.amazonaws.com/onclickfiles/module_master/5af04f5f472e1Jobs.jpg"},
+        {"status":"Active","countryId":1,"countryName": "India","stateId": 6,"name":"Telangana","stateCode": "TS", "posting": "No", "id":6,"imagePath":"assets/img/no_preview.png"}, 
+        {"status":"Active","countryId":1,"countryName": "India","stateId": 7,"name":"Goa","stateCode": "GA", "posting": "Yes", "id":7,"imagePath":"assets/img/no_preview.png"}
+    ]  
+}

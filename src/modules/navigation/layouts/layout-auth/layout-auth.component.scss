@@ -1,7 +1,7 @@
 @import 'styles/variables.scss';
 
 .bg-primary{
-    background-color: #d2d2d2 !important;
+    background-color: #E7EBEE !important;
 }
 
 .background-layer {
@@ -14,4 +14,12 @@
     background: no-repeat url("/assets/img/signin-bg.jpg");
     background-position: top right;
     margin-left: -21px;
+    height:auto !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index:1;
+    width: 40%;
+    margin-left: 60%;
  }

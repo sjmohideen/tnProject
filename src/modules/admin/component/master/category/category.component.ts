@@ -9,7 +9,7 @@ import {MessageService} from 'primeng/api';
   styleUrls: ['./category.component.scss','../module/module.component.scss']
 })
 export class CategoryComponent implements OnInit {
-
+  @ViewChild('dt') dt: any;
   cols:any= [];
   data:any = [];
   showForm:any = false;
@@ -39,7 +39,7 @@ export class CategoryComponent implements OnInit {
     this.cols = [
       { field: 'name', header: 'Module Name' },
       { field: 'categoryName', header: 'Category Name' },
-      {field: 'posting', header: 'categoryName ' },
+      {field: 'posting', header: 'User Posting ' },
 
 
   ];
@@ -104,7 +104,7 @@ edit(rowData:any){
    this.formFields.patchValue({
     //imageLogo: reader.result
     name:rowData.name,
-    moduleId:rowData.name,
+    moduleId:rowData.moduleId,
     postingStatus:rowData.posting,
     imageLogo :'test'
   });
@@ -138,6 +138,9 @@ edit(rowData:any){
       // ChangeDetectorRef since file is loading outside the zone
       //this.ref.markForCheck();        
     }
+  }
+  toggle(){
+    this.showForm = !this.showForm;
   }
 
 }

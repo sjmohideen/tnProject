@@ -1,0 +1,12 @@
+
+{
+    "data": [
+     
+        {"weatherApiId":"456","latitude":"4545.45","longitude":"212.445","cityName":"Chennai","status":"Active","countryId":1,"countryName": "India","stateId": 1,"stateName": "Tamil Nadu ","stateCode":"TN","categoryNeeded": "No", "id":1,"imagePath":"assets/img/no_preview.png"},
+        {"weatherApiId":"322","latitude":"1134.45","longitude":"112.445","cityName":"Madurai","status":"Active","countryId":1,"countryName": "India","stateId": 2,"stateName":"Tamil Nadu","stateCode": "TN", "posting": "No", "id":2,"imagePath":"https://s3.ap-south-1.amazonaws.com/onclickfiles/category_master/5bdad1e61a9e1partyhall.jpg"},
+        {"weatherApiId":"452326","latitude":"354589.45","longitude":"512.445","cityName":"Tricy","status":"Active","countryId":1,"countryName": "India","stateId": 3,"stateName":"Tamil Nadu","stateCode": "TN", "posting": "Yes", "id":3,"imagePath":"https://s3.ap-south-1.amazonaws.com/onclickfiles/category_master/5bdad1f34ba2edj.jpg"},
+        {"weatherApiId":"4546","latitude":"952.45","longitude":"695.445","cityName":"Tenkasi","status":"Active","countryId":1,"countryName": "India","stateId": 4,"stateName":"Tamil Nadu","stateCode": "TN", "posting": "No", "id":4,"imagePath":"assets/img/no_preview.png"},
+       
+        {"weatherApiId":"1456","latitude":"784.45","longitude":"789.445","cityName":"Bangalore","status":"Active","countryId":1,"countryName": "India","stateId": 7,"stateName":"Tamil Nadu","stateCode": "TN", "posting": "Yes", "id":7,"imagePath":"assets/img/no_preview.png"}
+    ]  
+}

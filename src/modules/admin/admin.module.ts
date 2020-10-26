@@ -13,11 +13,12 @@ import { CountryComponent } from './component/location/country/country.component
 import { StateComponent } from './component/location/state/state.component';
 import { CityComponent } from './component/location/city/city.component';
 import { LocalityComponent } from './component/location/locality/locality.component';
+import { TestComponent } from './component/location/test/test.component';
 
 
 
 @NgModule({
-  declarations: [LogoMasterComponent, ModuleComponent, CategoryComponent, CountryComponent, StateComponent, CityComponent, LocalityComponent],
+  declarations: [LogoMasterComponent, ModuleComponent, CategoryComponent, CountryComponent, StateComponent, CityComponent, LocalityComponent, TestComponent],
   imports: [
     CommonModule,
     NavigationModule,
