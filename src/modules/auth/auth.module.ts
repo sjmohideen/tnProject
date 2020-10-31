@@ -19,7 +19,8 @@ import * as authGuards from './guards';
 
 /* Services */
 import * as authServices from './services';
-
+import { PrimeNgModule } from '../../modules/primeng/primeng.module';
+import { CarouselModule } from 'primeng/carousel';
 @NgModule({
     imports: [
         CommonModule,
@@ -28,6 +29,7 @@ import * as authServices from './services';
         FormsModule,
         AppCommonModule,
         NavigationModule,
+        CarouselModule,
     ],
     providers: [...authServices.services, ...authGuards.guards],
     declarations: [...authContainers.containers, ...authComponents.components],

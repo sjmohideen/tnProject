@@ -11,8 +11,9 @@ import { AuthService } from '@modules/auth/services';
 })
 export class LoginComponent implements OnInit {
     formFields:FormGroup;
-    submitted = false;
-    loading = false;
+    submitted:boolean = false;
+    loading:boolean = false;
+
 
     constructor(private authService:AuthService,private router:Router,private formBuilder: FormBuilder) {}
     ngOnInit() {
@@ -25,7 +26,7 @@ export class LoginComponent implements OnInit {
     submitForm(){
        
         this.submitted = true;
-        console.log("submitting...");
+        console.log("submitting...",this.formFields);
         if (this.formFields.invalid) {
             return;
         }
