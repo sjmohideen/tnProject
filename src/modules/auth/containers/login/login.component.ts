@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
         this.authService.setUserInfo(userObj);
         setTimeout(() => {
             this.loading = false;
-            this.router.navigate(['admin/dashboard']);
+            this.router.navigate(['dashboard']);
         }, 1500);
       
     }

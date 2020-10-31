@@ -8,7 +8,7 @@
             <form [formGroup]="formFields" (ngSubmit)="onSubmit()"> 
                 <div class="form-row">
                    
-                    <div class="form-group col-lg-5 col-sm-12 col-md-2">
+                    <div class="form-group col-lg-3 col-sm-12 col-md-2">
                         <label>Country Name</label>
                         <select formControlName="countryId" class="form-control" >
                             <option [ngValue]="null" > --Select --</option>
@@ -32,6 +32,14 @@
                         <input type="text" formControlName="code" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.code.errors }" />
                         <div *ngIf="submitted && f.code.errors" class="invalid-feedback">
                             <div *ngIf="f.code.errors.required">State Code is required</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-3">
+                        <label>Default City Name</label>
+                        <input type="text" formControlName="defaultCityName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.defaultCityName.errors }" />
+                        <div *ngIf="submitted && f.defaultCityName.errors" class="invalid-feedback">
+                            <div *ngIf="f.defaultCityName.errors.required"> Default City Name is required</div>
                         </div>
                     </div>
                     

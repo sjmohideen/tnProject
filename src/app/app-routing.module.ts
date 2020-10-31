@@ -4,9 +4,9 @@ import { AuthGuard } from '@modules/auth/guards';
 
 const routes: Routes = [
     {
-        path: 'admin',
+        path: '',
         pathMatch: 'full',
-        redirectTo: 'admin/dashboard',
+        redirectTo: 'dashboard',
         canActivate:[AuthGuard]
     },
     {
@@ -15,7 +15,7 @@ const routes: Routes = [
             import('modules/charts/charts-routing.module').then(m => m.ChartsRoutingModule),
     },
     {
-        path: 'admin/dashboard',
+        path: 'dashboard',
         loadChildren: () =>
             import('modules/dashboard/dashboard-routing.module').then(
                 m => m.DashboardRoutingModule
@@ -23,14 +23,14 @@ const routes: Routes = [
         canActivate:[AuthGuard]
     },
     {
-        path: 'admin',
+        path: '',
         loadChildren: () =>
             import('modules/admin/admin.routing.module').then(
                 m => m.AdminRoutingModule
             ),
     },
     {
-        path: 'admin/auth',
+        path: 'auth',
         loadChildren: () =>
             import('modules/auth/auth-routing.module').then(m => m.AuthRoutingModule),
     },

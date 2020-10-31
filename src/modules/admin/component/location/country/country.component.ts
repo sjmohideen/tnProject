@@ -42,8 +42,10 @@ export class CountryComponent implements OnInit {
       { field: 'name', header: 'Country Name' },
       { field: 'countryCode', header: 'Country Code' },
       { field: 'callingCode', header: 'Calling Code' },
+      { field: 'currencyCode', header: 'Currency Code' },
+      // { field: 'currencyText', header: 'Currency Text' },
       { field: 'primaryLanguage', header: 'Primary Language' },
-      { field: 'secondaryLanguage', header: 'Secondary Language' },
+      // { field: 'secondaryLanguage', header: 'Secondary Language' },
       { field: 'status', header: 'Status' },
 
 
@@ -53,7 +55,8 @@ export class CountryComponent implements OnInit {
         name: ['', Validators.required],
         countryCode: ['', Validators.required],
         callingCode: ['', Validators.required],
-        currency: ['', Validators.required],
+        currencyCode: ['', Validators.required],
+        currencyText: ['', Validators.required],
         primaryLanguage: ['', Validators.required],
         secondaryLanguage: ['', Validators.required],
         imageLogo: ['', Validators.required]
@@ -114,15 +117,17 @@ edit(rowData:any){
     name:rowData.name,
     countryCode:rowData.countryCode,
     callingCode:rowData.callingCode,
-    currency:rowData.currency,
+    currencyCode:rowData.currencyCode,
+    currencyText:rowData.currencyText,
     primaryLanguage:rowData.primaryLanguageId,
     secondaryLanguage:rowData.secondaryLanguageId,
-    imageLogo:rowData.imageLogo
+    imageLogo:rowData.imagePath
 
 
 
 
   });
+  this.imageUrl = rowData.imagePath;
  
 }
 

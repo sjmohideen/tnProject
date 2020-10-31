@@ -19,7 +19,7 @@ export const sideNavItems: SideNavItems = {
     dashboard: {
         icon: 'tachometer-alt',
         text: 'Dashboard',
-        link: '/admin/dashboard',
+        link: 'dashboard',
     },
     masters: {
         icon: 'columns',
@@ -31,11 +31,11 @@ export const sideNavItems: SideNavItems = {
            
                     {
                         text: 'Module Master',
-                        link: '/admin/module',
+                        link: '/module',
                     },
                     {
                         text: 'Category Master',
-                        link: '/admin/category',
+                        link: '/category',
                     },
             
                     ],
@@ -46,19 +46,19 @@ export const sideNavItems: SideNavItems = {
            
                     {
                         text: 'Country',
-                        link: '/admin/country',
+                        link: '/country',
                     },
                     {
                         text: 'State',
-                        link: '/admin/state',
+                        link: '/state',
                     },
                     {
                         text: 'City',
-                        link: '/admin/city',
+                        link: '/city',
                     },
                     {
                         text: 'Locality',
-                        link: '/admin/locality',
+                        link: '/locality',
                     },
             
                     ],

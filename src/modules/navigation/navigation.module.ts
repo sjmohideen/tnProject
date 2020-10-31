@@ -20,9 +20,10 @@ import * as navigationGuards from './guards';
 
 /* Services */
 import * as navigationServices from './services';
+import { PrimeNgModule } from '../primeng/primeng.module';
 
 @NgModule({
-    imports: [CommonModule, RouterModule, AppCommonModule],
+    imports: [CommonModule, RouterModule, AppCommonModule,PrimeNgModule],
     providers: [...navigationServices.services, ...navigationGuards.guards],
     declarations: [
         ...navigationContainers.containers,
@@ -33,6 +34,7 @@ import * as navigationServices from './services';
         ...navigationContainers.containers,
         ...navigationComponents.components,
         ...appCommonLayouts.layouts,
+        
     ],
 })
 export class NavigationModule {}

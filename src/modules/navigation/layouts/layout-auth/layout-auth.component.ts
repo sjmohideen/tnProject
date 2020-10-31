@@ -13,41 +13,9 @@ export class LayoutAuthComponent implements OnInit {
     constructor() {}
     ngOnInit() {
         this.products =  [
-            {
-                "id": "1000",
-                "code": "f230fh0g3",
-                "name": "Bamboo Watch",
-                "description": "Product Description",
-                "image": "1.jpg",
-                "price": 65,
-                "category": "Accessories",
-                "quantity": 24,
-                "inventoryStatus": "INSTOCK",
-                "rating": 5
-            },
-            {
-                "id": "1001",
-                "code": "nvklal433",
-                "name": "Black Watch",
-                "description": "Product Description",
-                "image": "2.jpg",
-                "price": 72,
-                "category": "Accessories",
-                "quantity": 61,
-                "inventoryStatus": "INSTOCK",
-                "rating": 4
-            },
-            {
-                "id": "1002",
-                "code": "zz21cz3c1",
-                "name": "Blue Band",
-                "description": "Product Description",
-                "image": "3.jpg",
-                "price": 79,
-                "category": "Fitness",
-                "quantity": 2,
-                "inventoryStatus": "LOWSTOCK",
-                "rating": 3
-            }]
+           {"image": "1.jpg"}, {"image": "2.jpg"}, {"image": "3.jpg"}, {"image": "4.jpg"}, {"image": "5.jpg"}, {"image": "6.jpg"}, {"image": "7.jpg"},
+           {"image": "8.jpg"}, {"image": "9.jpg"}, {"image": "10.jpg"}, {"image": "11.jpg"}, {"image": "12.jpg"}, {"image": "13.jpg"}, {"image": "14.jpg"},
+           {"image": "15.jpg"}
+        ]
     }
 }

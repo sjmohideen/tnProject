@@ -29,7 +29,7 @@ import { CarouselModule } from 'primeng/carousel';
         FormsModule,
         AppCommonModule,
         NavigationModule,
-        CarouselModule,
+        PrimeNgModule,
     ],
     providers: [...authServices.services, ...authGuards.guards],
     declarations: [...authContainers.containers, ...authComponents.components],

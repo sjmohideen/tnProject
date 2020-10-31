@@ -18,7 +18,7 @@ export class TopNavUserComponent implements OnInit {
         this.authService.logout();
         console.log("Logouts")
        
-        this.router.navigate(['/admin/auth/login'],{ queryParams: { 'logout': 1 }});
+        this.router.navigate(['/auth/login'],{ queryParams: { 'logout': 1 }});
         return false;
         
        

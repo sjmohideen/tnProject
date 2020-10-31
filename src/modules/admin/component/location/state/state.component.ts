@@ -38,6 +38,7 @@ export class StateComponent implements OnInit {
     this.cols = [
       { field: 'name', header: 'State Name' },
       { field: 'stateCode', header: 'State Code' },
+      { field: 'defaultCity', header: 'Default City' },
       {field: 'countryName', header: 'Country Name ' },
       {field: 'status', header: 'Status' },
 
@@ -47,7 +48,8 @@ export class StateComponent implements OnInit {
     this.formFields = this.formBuilder.group({
         name: ['', Validators.required],
         code: ['', Validators.required],
-        countryId: ['', Validators.required]
+        countryId: ['', Validators.required],
+        defaultCityName: ['', Validators.required]
     });
  
   }

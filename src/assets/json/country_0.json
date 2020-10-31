@@ -1,7 +1,7 @@
 
 {
     "data": [
-        {"id":"1","name":"India","countryCode":"In","callingCode":"91","primaryLanguage":"English","secondaryLanguage":"Hindi","status":"Active","primaryLanguageId":1,"secondaryLanguageId":5,"currency":"$"},
-        {"id":"2","name":"Japan","countryCode":"JP","callingCode":"81","primaryLanguage":"English","secondaryLanguage":"Japanish","status":"Active","primaryLanguageId":6,"secondaryLanguageId":1,"currency":"¥"}
+        {"id":"1","name":"India","countryCode":"In","callingCode":"91","primaryLanguage":"English","secondaryLanguage":"Hindi","status":"Active","primaryLanguageId":1,"secondaryLanguageId":5,"currencyCode":"$","currencyText":"INR","imagePath":"/assets/img/india.png"},
+        {"id":"2","name":"Japan","countryCode":"JP","callingCode":"81","primaryLanguage":"English","secondaryLanguage":"Japanish","status":"Active","primaryLanguageId":6,"secondaryLanguageId":1,"currencyCode":"¥","currencyText":"YEN","imagePath":"/assets/img/japan.png"}
     ]
 }

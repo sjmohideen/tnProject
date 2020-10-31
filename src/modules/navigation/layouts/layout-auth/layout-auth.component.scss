@@ -3,23 +3,38 @@
 .bg-primary{
     background-color: #E7EBEE !important;
 }
+.bg-primarybk{
+    background-color: #E7EBEE !important;
+}
 
 .background-layer {
     position: absolute;
-    top: 0;
+    top: 180px;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    background: no-repeat url("/assets/img/signin-bg.jpg");
-    background-position: top right;
-    margin-left: -21px;
-    height:auto !important;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    // background: no-repeat url("/assets/img/signin-bg.jpg");
+    // background-position: top right;
+    // margin-left: -21px;
+    // height:auto !important;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
     z-index:1;
     width: 40%;
     margin-left: 60%;
+ }
+
+ .p-link{
+     background-color: red !important;
+ }
+
+ .p-carousel .p-carousel-indicators .p-carousel-indicator button {
+    background-color: blue;
+ }
+
+ .p-carousel .p-carousel-indicator button {
+    background-color: green !important;
  }

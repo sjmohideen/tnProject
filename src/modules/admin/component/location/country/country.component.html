@@ -33,14 +33,24 @@
 
                       
                     </div>
+                    
                     <div  class="form-group col-3 inputIcon currency-field" >
-                        <label>Currency</label>
+                        <label>Currency Text</label>
                        
-                        <input type="text" formControlName="currency" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.currency.errors }" maxlength="3" />
-                        <div *ngIf="submitted && f.currency.errors" class="invalid-feedback">
-                            <div *ngIf="f.currency.errors.required"> Currency  is required</div>
+                        <input type="text" formControlName="currencyText" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.currencyText.errors }" maxlength="20" />
+                        <div *ngIf="submitted && f.currencyText.errors" class="invalid-feedback">
+                            <div *ngIf="f.currencyText.errors.required"> Currency Text  is required</div>
                         </div>
                     </div>
+                    <div  class="form-group col-3 inputIcon currency-field" >
+                        <label>Currency Code</label>
+                       
+                        <input type="text" formControlName="currencyCode" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.currencyCode.errors }" maxlength="3" />
+                        <div *ngIf="submitted && f.currencyCode.errors" class="invalid-feedback">
+                            <div *ngIf="f.currencyCode.errors.required"> Currency Code  is required</div>
+                        </div>
+                    </div>
+
                    
                     
                 </div>
@@ -73,7 +83,7 @@
                     <div class="form-group col-4">
                     
                         <div class="group-gap">
-                            <button type="button" class="btn btn-primary btn-sm btn-block choose-file" (click)="fileInput.click($event)">Choose a file</button>
+                            <button type="button" class="btn btn-primary btn-sm btn-block choose-file" (click)="fileInput.click($event)">Choose a flag</button>
                             <!-- Upload image -->
                             <div *ngIf="submitted && f.imageLogo.errors" class="invalid-feedback">
                                 <div *ngIf="f.imageLogo.errors.required">Image is required</div>
@@ -128,7 +138,7 @@
               <th *ngFor="let col of columns" [pSortableColumn]="col.field">
                   {{col.header}}  <p-sortIcon [field]="col.field"></p-sortIcon>
               </th> 
-             
+             <th>Image</th>
               <th>Edit</th> 
                    
             </tr>
@@ -138,6 +148,7 @@
               <td *ngFor="let col of columns">
                       {{rowData[col.field]}}
               </td>
+              <td><img src="{{rowData['imagePath']}}" style="width: 40px;height: 40px;"></td>
               <td>
                 <button type="button" class="btn btn-sm btn-primary btn-edit fav-space" id="2" title="Edit details" (click)="edit(rowData)"> <i class="fa fa fa-pencil-square-o"></i> </button>
                   &nbsp; 
@@ -145,9 +156,10 @@
                 <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                 </button>
                 &nbsp; 
-                  <button type="button" disabled="" class="btn btn-sm btn-danger btn-delete" id="2" title="Delete details" data-toggle="modal" data-target="#confirmModal">
-                <i class="fa fa-trash-o" aria-hidden="true"></i>
-              </button></td>
+                  <!-- <button type="button" disabled="" class="btn btn-sm btn-danger btn-delete" id="2" title="Delete details" data-toggle="modal" data-target="#confirmModal">
+                <i class="fa fa-trash-o" aria-hidden="true"></i> 
+              </button>
+            --></td>
           </tr>
         </ng-template>
       </p-table>
