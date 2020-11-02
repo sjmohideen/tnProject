@@ -9,7 +9,7 @@
                 <div class="form-row">
                    
                     <div class="form-group col-lg-3 col-sm-12 col-md-2">
-                        <label>Country Name</label>
+                        <label class="required">Country Name</label>
                         <select formControlName="countryId" class="form-control" >
                             <option [ngValue]="null" > --Select --</option>
                             <option *ngFor="let prf of countryList" [ngValue]="prf.id">
@@ -21,14 +21,14 @@
                         </div>
                     </div>
                     <div class="form-group col-3">
-                        <label>State Name</label>
+                        <label class="required">State Name</label>
                         <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
                         <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
                             <div *ngIf="f.name.errors.required"> State Name is required</div>
                         </div>
                     </div>
                     <div class="form-group col-3">
-                        <label>State Code</label>
+                        <label class="required">State Code</label>
                         <input type="text" formControlName="code" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.code.errors }" />
                         <div *ngIf="submitted && f.code.errors" class="invalid-feedback">
                             <div *ngIf="f.code.errors.required">State Code is required</div>
@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="form-group col-3">
-                        <label>Default City Name</label>
+                        <label class="required">Default City Name</label>
                         <input type="text" formControlName="defaultCityName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.defaultCityName.errors }" />
                         <div *ngIf="submitted && f.defaultCityName.errors" class="invalid-feedback">
                             <div *ngIf="f.defaultCityName.errors.required"> Default City Name is required</div>

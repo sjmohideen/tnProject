@@ -7,7 +7,7 @@ export const sideNavSections: SideNavSection[] = [
     },
     {
         text: 'INTERFACE',
-        items: ['masters', 'daily_updates'],
+        items: ['masters','security', 'daily_updates'],
     },
     // {
     //     text: 'ADDONS',
@@ -37,7 +37,10 @@ export const sideNavItems: SideNavItems = {
                         text: 'Category Master',
                         link: '/category',
                     },
-            
+                    // {
+                    //     text: 'Logo Master',
+                    //     link: '/logoMaster',
+                    // },
                     ],
                 },
                 {
@@ -64,6 +67,16 @@ export const sideNavItems: SideNavItems = {
                     ],
                 }
             ]
+    },
+    security: {
+        icon: 'columns',
+        text: 'Security',
+        submenu: [
+            {
+                text: 'Admin Details',
+                link: '/admin-details',
+            },
+        ]
     },
     location: {
         icon: 'columns',

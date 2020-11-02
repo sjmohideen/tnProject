@@ -29,3 +29,10 @@
 .search-holder{
     margin-left: 75%;
 }
+
+.form-group label.required:after {
+    content: "*";
+    color: #ff7575;
+    left: 5px;
+    position: relative;
+}

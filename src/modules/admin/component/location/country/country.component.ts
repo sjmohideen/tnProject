@@ -58,7 +58,7 @@ export class CountryComponent implements OnInit {
         currencyCode: ['', Validators.required],
         currencyText: ['', Validators.required],
         primaryLanguage: ['', Validators.required],
-        secondaryLanguage: ['', Validators.required],
+        secondaryLanguage: ['', ],
         imageLogo: ['', Validators.required]
     });
  

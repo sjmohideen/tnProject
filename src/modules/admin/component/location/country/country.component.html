@@ -9,7 +9,7 @@
                 <div class="form-row">
                    
                     <div class="form-group col-3">
-                        <label>Country Name</label>
+                        <label class="required">Country Name</label>
                         <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
                         <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
                             <div *ngIf="f.name.errors.required"> Country Name is required</div>
@@ -17,18 +17,18 @@
                     </div>
 
                     <div class="form-group col-3">
-                        <label>Country Code</label>
-                        <input type="text" formControlName="countryCode" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.countryCode.errors }" />
+                        <label class="required">Country Code</label>
+                        <input type="text" formControlName="countryCode" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.countryCode.errors }" maxlength="10" />
                         <div *ngIf="submitted && f.countryCode.errors" class="invalid-feedback">
                             <div *ngIf="f.countryCode.errors.required"> Country Code is required</div>
                         </div>
                     </div>
                     <div class="form-group col-3 inputIcon">
-                        <label>Calling Code</label>
+                        <label class="required">Calling Code</label>
                         <i class="fa fa-plus"></i>
                         <input type="text" formControlName="callingCode" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.callingCode.errors }" maxlength="3" />
                         <div *ngIf="submitted && f.callingCode.errors" class="invalid-feedback">
-                            <div *ngIf="f.callingCode.errors.required"> Calling Code is required</div>
+                            <div *ngIf="f.callingCode.errors.required"> required</div>
                         </div>
 
                       
@@ -39,7 +39,7 @@
                        
                         <input type="text" formControlName="currencyText" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.currencyText.errors }" maxlength="20" />
                         <div *ngIf="submitted && f.currencyText.errors" class="invalid-feedback">
-                            <div *ngIf="f.currencyText.errors.required"> Currency Text  is required</div>
+                            <div *ngIf="f.currencyText.errors.required"> required</div>
                         </div>
                     </div>
                     <div  class="form-group col-3 inputIcon currency-field" >
@@ -47,7 +47,7 @@
                        
                         <input type="text" formControlName="currencyCode" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.currencyCode.errors }" maxlength="3" />
                         <div *ngIf="submitted && f.currencyCode.errors" class="invalid-feedback">
-                            <div *ngIf="f.currencyCode.errors.required"> Currency Code  is required</div>
+                            <div *ngIf="f.currencyCode.errors.required">  required</div>
                         </div>
                     </div>
 
@@ -57,7 +57,7 @@
                 <div class="form-row">
                    
                     <div class="form-group col-3">
-                        <label>Primary Language</label>
+                        <label class="required">Primary Language</label>
                         <select formControlName="primaryLanguage" class="form-control" >
                             <option [ngValue]="null" > --Select --</option>
                             <option *ngFor="let prf of languageList" [ngValue]="prf.id">
@@ -65,7 +65,7 @@
                             </option>
                           </select>
                           <div *ngIf="submitted && f.primaryLanguage.errors" class="invalid-feedback">
-                            <div *ngIf="f.moduleId.errors.required"> Primary Language  is required</div>
+                            <div *ngIf="f.primaryLanguage.errors.required"> Primary Language  is required</div>
                         </div>
                     </div>
                     <div class="form-group col-4">

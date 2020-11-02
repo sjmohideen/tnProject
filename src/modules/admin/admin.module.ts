@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LogoMasterComponent } from './component/logo-master/logo-master.component';
+// import { LogoMasterComponent } from './component/logo-master/logo-master.component';
 import { NavigationModule } from '@modules/navigation/navigation.module';
 import { PrimeNgModule } from '@modules/primeng/primeng.module';
 import { BookService } from './service/book.service';
@@ -14,11 +14,13 @@ import { StateComponent } from './component/location/state/state.component';
 import { CityComponent } from './component/location/city/city.component';
 import { LocalityComponent } from './component/location/locality/locality.component';
 import { TestComponent } from './component/location/test/test.component';
+import { LogoMasterComponent } from './component/master/logo-master/logo-master.component';
+import { AdminDetailsComponent } from './component/security/admin-details/admin-details.component';
 
 
 
 @NgModule({
-  declarations: [LogoMasterComponent, ModuleComponent, CategoryComponent, CountryComponent, StateComponent, CityComponent, LocalityComponent, TestComponent],
+  declarations: [ ModuleComponent, CategoryComponent, CountryComponent, StateComponent, CityComponent, LocalityComponent, TestComponent,LogoMasterComponent, AdminDetailsComponent],
   imports: [
     CommonModule,
     NavigationModule,
@@ -26,7 +28,7 @@ import { TestComponent } from './component/location/test/test.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  exports:[LogoMasterComponent],
+  exports:[],
   providers:[BookService,MasterService]
 })
 export class AdminModule { }

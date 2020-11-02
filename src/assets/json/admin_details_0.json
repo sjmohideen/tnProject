@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Admin",
+            "emailId": "tnonline@gmail.com",
+            "contactNumber": "8987787878",
+            "role": "Global Admin",
+            "roleId":1,
+            "countryId":1,
+            "statedId":0,
+            "cityId":0,
+            "zoneId":0,
+            "country": "India",
+            "state": "",
+            "status": "Active"
+        },
+        {
+            "id": 2,
+            "name": "Arun",
+            "emailId": "sjm@gmail.com",
+            "contactNumber": "999898989",
+            "role": "State Admin",
+            "country": "India",
+            "state": "Tamil Nadu",
+            "status": "Active",
+            "roleId":2,
+            "countryId":1,
+            "stateId":1,
+            "cityId":0,
+            "zoneId":0
+        }
+    ]
+}
