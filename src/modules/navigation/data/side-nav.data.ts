@@ -19,7 +19,7 @@ export const sideNavItems: SideNavItems = {
     dashboard: {
         icon: 'tachometer-alt',
         text: 'Dashboard',
-        link: 'dashboard',
+        link: '/dashboard',
     },
     masters: {
         icon: 'columns',

@@ -124,7 +124,7 @@
               <th *ngFor="let col of columns" [pSortableColumn]="col.field">
                   {{col.header}}  <p-sortIcon [field]="col.field"></p-sortIcon>
               </th> 
-              
+              <th>Populate Locality</th> 
               <th>Edit</th> 
                    
             </tr>
@@ -135,17 +135,19 @@
                       {{rowData[col.field]}}
               </td>
               
-             
+              <td style="width: 50px;"><button type="button" class="btn btn-sm btn-primary btn-edit fav-space" [disabled]="rowData.apiCalled">Call API</button></td>
               <td>
                 <button type="button" class="btn btn-sm btn-primary btn-edit fav-space" id="2" title="Edit details" (click)="edit(rowData)"> <i class="fa fa fa-pencil-square-o"></i> </button>
                   &nbsp; 
                 <button type="button" class="btn btn-sm btn-warning btn-status" id="2" data-status="0" title="Active/Deactive details">
                 <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                 </button>
-                &nbsp; 
+                <!-- &nbsp; 
                   <button type="button" disabled="" class="btn btn-sm btn-danger btn-delete" id="2" title="Delete details" data-toggle="modal" data-target="#confirmModal">
                 <i class="fa fa-trash-o" aria-hidden="true"></i>
-              </button></td>
+              </button> -->
+            
+            </td>
           </tr>
         </ng-template>
       </p-table>
